@@ -7,3 +7,11 @@ resource "aws_instance" "terraform_instance1" {
     }
   
 }
+resource "aws_s3_bucket" "bucket1" {
+  bucket = "mebuc9133"
+
+  tags = {
+    Name        = "My bucket1"
+    Environment = "Dev"
+  }
+}
